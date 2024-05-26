@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 96px;
+    overflow: auto;
+}
+h1{
+    font-size: 40px;
+    padding: 300px;
+    text-align: center;
+    color: rgb(255, 132, 0);
+   
+}
+.navbar a{
+    font-size: 30px;
+    padding:  0 650px;
+    color: gray;
+    text-align: center;
+}
+.navbar a:hover{
+    color: rgb(255, 132, 0);
+}

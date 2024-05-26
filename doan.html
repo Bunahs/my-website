@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="doan.css">
+    <title>SWE</title>
+    <script src="doan.js" defer></script>
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <div class="logo">
+            <a href="#home"><img src="images/Screenshot 2024-05-24 151229.png"></a> 
+        </div>
+        <nav class="navbar">
+            <a href="#home" onclick="toggleMenu()">Trang chủ</a>
+            <a href="#products" onclick="toggleMenu()">Sản phẩm</a>
+            <a href="#about" onclick="toggleMenu()">About us</a>
+            <a href="#policy" onclick="toggleMenu()">Return policy</a>
+            <a href="#location" onclick="toggleMenu()">Store location</a>
+           
+        </nav>
+        
+        <div class="icons">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-shopping-cart" onclick="goToCheckout()"><span id="cartItemCount">0</span></a>
+            
+            <a href="#" class="fas fa-user" onclick="goToLogin()"></a>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>StreetWearEasy</h3>
+            <span>Chúng tôi mang đến sự trải nghiệm vô cùng tuyệt vời đến người dùng</span> <br>
+            <a href="#products" class="btn">New Arrivals</a>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <h1 class="heading">All <span>products</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-9%</span>
+                <div class="image">
+                    <img src="images/6b9aba5d-4f99-43e8-ac6e-5d01b7a98e75_c2043760bf804ea8baaf79a7fb47fb17_master.webp" alt="">
+                <div class="icons">
+                    <a href="#" class="cart-btn" onclick="addToCart(event)">ADD TO BAG</a>
+                </div>
+                </div>
+                <div class="content">
+                    <h3>VN MESH POLO - CREAM</h3>
+                    <div class="price">420.000₫ <br><span>462.000₫</span></div>
+                </div>
+            </div>
+            
+            <div class="box">
+                <span class="discount">-9%</span>
+                <div class="image">
+                    <img src="images/59deb629-f22a-4335-826d-3bda94442272_f6cd1d147c7e4b16830451ef28893654_master.webp" alt="">
+                <div class="icons">
+                    <a href="#" class="cart-btn" onclick="addToCart(event)">ADD TO BAG</a>
+                </div>
+                </div>
+                <div class="content">
+                    <h3>VN MESH POLO - BLACK</h3>
+                    <div class="price">420.000₫ <br><span>462.000₫</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-9%</span>
+                <div class="image">
+                    <img src="images/34c9d769-ede1-4324-a1d0-5dc2e40a8c02_4c29474179f14948ae1b67cfe41ab62f_master.webp" alt="">
+                <div class="icons">
+                    <a href="#" class="cart-btn" onclick="addToCart(event)">ADD TO BAG</a>
+                </div>
+                </div>
+                <div class="content">
+                    <h3>GLITCH TEE - TAN</h3>
+                    <div class="price">480.000₫ <br><span>528.000₫</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-9%</span>
+                <div class="image">
+                    <img src="images/272949d3-1cd4-40c6-b88a-c6e61c00e8fe_54698bf3393a4bc89a1dba6a9d5b8d89_master.webp" alt="">
+                <div class="icons">
+                    <a href="#" class="cart-btn" onclick="addToCart(event)">ADD TO BAG</a>
+                </div>
+                </div>
+                <div class="content">
+                    <h3>MOM TEE - WHITE</h3>
+                    <div class="price">400.000₫<br><span>440.000₫</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-27%</span>
+                <div class="image">
+                    <img src="images/1_3ff33c8267564474b9774d42199e0558_master.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="cart-btn" onclick="addToCart(event)">ADD TO BAG</a>
+                </div>
+                </div>
+                <div class="content">
+                    <h3>FRAYED JEANS</h3>
+                    <div class="price">576.000₫<br><span>792.000₫</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-36%</span>
+                <div class="image">
+                    <img src="images/1__2__ef0a4a2fd94d4099b8d21276fda828c7_master.webp" alt="">
+                <div class="icons">
+                    <a href="#" class="cart-btn" onclick="addToCart(event)">ADD TO BAG</a>
+                </div>
+                </div>
+                <div class="content">
+                    <h3>PLEATED PANTS - BLACK</h3>
+                    <div class="price">385.000₫<br><span>605.000₫</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-27%</span>
+                <div class="image">
+                    <img src="images/1_2113b8a883c545e68b89a3456cf9c53f_master.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="cart-btn" onclick="addToCart(event)">ADD TO BAG</a>
+                </div>
+                </div>
+                <div class="content">
+                    <h3>WASHED JEANS - BLACK</h3>
+                    <div class="price">552.000₫<br><span>759.000₫</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-36%</span>
+                <div class="image">
+                    <img src="images/1_f56d15d96f454a63a34e0829c9c463f1_master.webp" alt="">
+                <div class="icons">
+                    <a href="#" class="cart-btn" onclick="addToCart(event)">ADD TO BAG</a>
+                </div>
+                </div>
+                <div class="content">
+                    <h3>CARGO JEANS - BLACK</h3>
+                    <div class="price">525.000₫<br><span>825.000₫</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-45%</span>
+                <div class="image">
+                    <img src="images/1a_c599e8bd4df945cab42fb52dc53b0e44_master.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="cart-btn" onclick="addToCart(event)">ADD TO BAG</a>
+                </div>
+                </div>
+                <div class="content">
+                    <h3>ILY HOODIE ZIP - GRAY</h3>
+                    <div class="price">420.000₫<br><span>770.000₫</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-45%</span>
+                <div class="image">
+                    <img src="images/1_3a9c467f0f1d49729b7c56c80a3439ff_master.webp" alt="">
+                <div class="icons">
+                    <a href="#" class="cart-btn" onclick="addToCart(event)">ADD TO BAG</a>
+                </div>
+                </div>
+                <div class="content">
+                    <h3>ILY HOODIE ZIP - CREAM</h3>
+                    <div class="price">420.000₫<br><span>770.000₫</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-45%</span>
+                <div class="image">
+                    <img src="images/1_b33fdcbbafc34d10b9c8bf67fe19c2eb_master.webp" alt="">
+                <div class="icons">
+                    <a href="#" class="cart-btn" onclick="addToCart(event)">ADD TO BAG</a>
+                </div>
+                </div>
+                <div class="content">
+                    <h3>WAVELINES SWEATER - GRAY/BLACK</h3>
+                    <div class="price">306.000₫<br><span>561.000₫</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-27%</span>
+                <div class="image">
+                    <img src="images/1_fc8d45da09c94e1381af42e93ad74962_master.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="cart-btn" onclick="addToCart(event)">ADD TO BAG</a>
+                </div>
+                </div>
+                <div class="content">
+                    <h3>WAVELINES CARDIGAN - GRAY</h3>
+                    <div class="price">432.000₫<br><span>594.000₫</span></div>
+                </div>
+            </div>
+
+            
+            <div class="box">
+                <div class="image">
+                    <img src="images/a2a87bc8-9555-4d34-821d-98b142b7d9fc_7780da35a93344449f2cf55bd73ca165_master.webp" alt="">
+                <div class="icons">
+                    <a href="#" class="cart-btn" onclick="addToCart(event)">ADD TO BAG</a>
+                </div>
+                </div>
+                <div class="content">
+                    <h3>SWE COLD CUP</h3>
+                    <div class="price">250.000₫</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/1_75b7eff3a143421b884c9e49758ef310_master.webp" alt="">
+                <div class="icons">
+                    <a href="#" class="cart-btn" onclick="addToCart(event)">ADD TO BAG</a>
+                </div>
+                </div>
+                <div class="content">
+                    <h3>SWE WOVEN BAG</h3>
+                    <div class="price">110.000₫</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-60%</span>
+                <div class="image">
+                    <img src="images/1_f12aff0d10f94f138c881fff8651215e_master.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="cart-btn" onclick="addToCart(event)">ADD TO BAG</a>
+                </div>
+                </div>
+                <div class="content">
+                    <h3>SWE BAG</h3>
+                    <div class="price">220.000₫ <br> <span>550.000₫</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-50%</span>
+                <div class="image">
+                    <img src="images/thiet_ke_chua_co_ten__4___1__d7cb70a96fbb4d249b65b387919e93d1_master.webp" alt="">
+                <div class="icons">
+                    <a href="#" class="cart-btn" onclick="addToCart(event)">ADD TO BAG</a>
+                </div>
+                </div>
+                <div class="content">
+                    <h3>SWE SLIDES - BLACK</h3>
+                    <div class="price">187.500₫<br> <span>375.000₫</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="heading"><span>About us </span></h1>
+        <div class="row">
+            <div class="image-container">
+                <img src="images/founders_grande.webp" alt="">
+            </div>
+        <div class="content">
+            <h3>LỊCH SỬ HÌNH THÀNH</h3>
+            <p>Được thành lập vào cuối năm 2016 trong bối cảnh thời trang streetstyle dần nhen nhóm vào thị trường Việt Nam. Sau 6 năm phát triển, SWE - Street Wear Eazy với slogan Young kids with a mission™ đã chiếm được tình cảm của hầu hết các bạn trẻ yêu mến thời trang đường phố trên khắp cả nước. </p>
+            <p>Thời trang vận hành như dòng thời gian không ngừng dịch chuyển. Hiểu được điều này, SWE luôn biết cách làm mới mình bằng cách liên tục cho ra đời những sản phẩm không chỉ chất lượng mà còn có thiết kế vô cùng độc đáo, mới lạ và ấn tượng, đảm bảo khiến bạn trông trendy hơn bao giờ hết.</p>
+            <a href="#" class="btn">Learn more</a>
+        </div>
+        </div>
+    </section>
+
+    <section class="policy" id="policy">
+        <h1 class="heading"><span>Chính sách đổi trả</span></h1>
+        <div class="row">
+            <div class="content">
+                <strong>1. CHÍNH SÁCH ÁP DỤNG</strong> <br>
+                <strong>Đối với cửa hàng:</strong>
+                <p>-Trong vòng <span>5 (năm) ngày</span> tính từ ngày mua hàng, SWE hỗ trợ bạn đổi size/ đổi màu/ đổi sản phẩm với điều kiện sản phẩm chưa qua sử dụng, chưa giặt và không bị hư hại và trong tình trạng giống như khi mua ban đầu.</p>
+                <p>-Vì lý do sức khỏe, sản phẩm đồ lót, phụ kiện không được đổi.</p>
+                <p>-Vui lòng cung cấp hóa đơn mua hàng để được hỗ trợ đổi.</p>
+                <strong>Đối với online:</strong>
+                <p>-Trong vòng <span>5 (năm) ngày</span> tính từ ngày nhận hàng, SWE hỗ trợ bạn đổi size/ đổi màu/ đổi sản phẩm với điều kiện sản phẩm chưa qua sử dụng, chưa giặt và không bị hư hại và trong tình trạng giống như khi mua ban đầu.
+                </p>
+                <p>-Vì lý do sức khỏe, sản phẩm đồ lót, phụ kiện không được đổi.</p>
+                <p>-Vui lòng cung cấp hóa đơn mua hàng để được hỗ trợ đổi.</p>
+                <strong>Lưu ý:</strong>
+                <p>*Đối với trường hợp đổi sản phẩm khác, bạn vui lòng đổi sang sản phẩm có giá trị ngang hoặc lớn hơn.</p>
+                <p>Trường hợp bạn đổi sang sản phẩm có giá trị thấp hơn, SWE xin phép không hoàn lại tiền chênh lệch. </p>
+                <p>Trường hợp bạn đổi sang sản phẩm có giá trị cao hơn, vui lòng thanh toán phí chênh lệch. 
+                </p>
+                <p>*Tất cả các hóa đơn chỉ được hỗ trợ đổi <span>một lần duy nhất.</span></p>
+                <strong>2. CHI PHÍ VẬN CHUYỂN TRONG TRƯỜNG HỢP ĐỔI TRẢ:</strong>
+                <p>-Trường hợp sản phẩm lỗi do nhà sản xuất (sản phẩm bị ra màu, hình in bong tróc/loang màu, thiếu hình in, lỗi dây kéo, nút, giao thiếu, sai sản phẩm): SWE sẽ chịu phí vận chuyển 2 chiều. </p>
+                <p>-Trường hợp đổi sản phẩm do nhu cầu khách hàng: <span> Khách hàng sẽ chịu phí vận chuyển 2 chiều.</span></p>
+                <strong>3. QUY TRÌNH ĐỔI TRẢ SẢN PHẨM </strong>
+                <p>-Đối với khách hàng mua tại cửa hàng, sản phẩm đổi trả phải còn nguyên tag và hóa đơn đi kèm  đến các chi nhánh của SWE <span>sau 15:00h</span> để đổi hàng. </p>
+                <p>-Đối với khách hàng mua online, bạn vui lòng inbox fanpage (FB/IG) cung cấp mã đơn hàng và lý do đổi để được nhân viên hướng dẫn quy trình đổi sản phẩm. (Sau khi SWE đã nhận và kiểm tra đầy đủ các điều kiện sản phẩm, sẽ tiến hành đơn đổi cho khách hàng).</p>
+                <p>-Mọi thông tin chi tiết xin vui lòng liên hệ hotline: <span>19003136</span></p>
+                <p>-Khách hàng vui lòng ghi thông tin như sau kèm với sản phẩm khi gửi hàng:</p>
+                <p>Tên Facebook/ Instagram.</p>
+                <p>Số điện thoại dùng đặt hàng.</p>
+                <p>Lý do gửi hàng: Đổi size (size bạn muốn đổi), đổi sang sản phẩm khác do nhu cầu cá nhân (sản phẩm và size sản phẩm), lỗi do sản xuất (hình in, đường chỉ, dây kéo, nút,…).</p>
+                <strong>LƯU Ý:</strong>
+                <p>-SWE không chấp nhận hoàn trả tiền dưới mọi hình thức trừ trường hợp lỗi đến từ phía nhà sản xuất hoặc sản phẩm khách đặt đã hết hàng toàn hệ thống. </p>
+                <p>-Đối với sản phẩm khuyến mãi: Các sản phẩm được mua trong chương trình giảm giá, khuyến mãi SWE sẽ hỗ trợ đổi trả tùy từng chương trình. Khách hàng vui lòng đọc kỹ thông tin trước khi mua hàng.</p>
+                <p>-Các trường hợp sẽ không được đổi trả: </p>
+                <p>Sản phẩm hư hỏng do cách giặt ủi, bảo quản: sử dụng chất tẩy mạnh, giặt chung với các sản phẩm đậm màu khác, ủi hoặc sấy ở nhiệt độ cao.</p>
+                <p>Sản phẩm hư hỏng do tác động bên ngoài: côn trùng, sinh vật.</p>
+                <p>Sản phẩm hư hỏng do tác động vật lý: va chạm, cọ xát, chà mạnh,…</p>
+                <p>Các sản phẩm cá nhân (đồ lót, vớ)</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="location" id="location">
+    <h1 class="heading"><span>STORE</span></h1>
+    <div class="row">
+        <div class="content">
+            <h3>Hồ Chí Minh</h3>
+            <p>44A Trần Quang Diệu, Quận 3, HCMC</p>
+            <p>The New Playground Lý Tự Trọng, Quận 1</p>
+            <p>The New Playground Lê Lai, Quận 1</p>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="footer">
+    <div class="footer-container">
+    <div class="credit">
+        <img src="images/imagelogo.webp" alt="">
+    </div>
+</div>
+</section>
+</body>
+</html>
